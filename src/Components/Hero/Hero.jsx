@@ -9,9 +9,9 @@ const Hero = () => {
         <video src={HeroVideo} autoPlay muted loop>
             
         </video>
-        <div>
+        <div className= 'hero-text'>
             <h1> Turn Up the Radiance </h1>
-            <p></p>
+            <p>Light up your stage with Candela – where innovation meets illumination.</p>
 
             <button className="btn">Experience the Glow</button>
         </div>

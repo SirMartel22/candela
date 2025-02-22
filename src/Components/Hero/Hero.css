@@ -7,15 +7,19 @@
     align-items: center;
     justify-content: center;
     background-color: rgb(37, 18, 18);
-
+    overflow: hidden;
 }
+
 video{
+    top: 0;
+    left: 0;
     position: absolute;
     z-index: 1;
     width: 100%;
     opacity: 0.8;
-    overflow: hidden;
-    /* height: 90vh;; */
+    object-fit: cover;
+    height: 100%;
+    opacity: 0.8;
 }
 
 .hero-container div{
@@ -23,11 +27,30 @@ video{
     z-index: 2;
     text-align: center;
     color: #f5f5f5;
-    /* font-family: 'spacecolony-medium-5', sans-serif; */
-    /* font-family: 'spaceColony-Medium', sans-serif; */
-
 }
 
 .hero-container h1{
     font-size: 60px;
+}
+
+.hero-text p{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.hero-container button{
+    background-color: rgb(191, 78, 8);
+    color: #f5f5f5;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius:50px;
+    transform: ease-in-out;
+    transition: 0.5s;   
+    font-family: poppins;
+}
+
+.hero-container button:hover{
+    background-color: #f5f5f5;
+    color: rgb(191, 78, 8);
+    cursor: pointer;
 }
