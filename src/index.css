@@ -5,16 +5,22 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body{
+  /* background-color: rgb(37, 18, 18); */
   font-family: poppins;
 }
 
 .Navbar{
+  position: fixed;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: rgb(37, 18, 18);
+  /* background-color: rgb(37, 18, 18); */
   width: 100%;
   padding: 0 10%;
   flex-wrap: wrap;
+  z-index: 10;
 }
 
