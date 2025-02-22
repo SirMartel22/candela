@@ -10,8 +10,10 @@ const Hero = () => {
             
         </video>
         <div>
-            <h1> Candela Light and Brand</h1>
+            <h1> Turn Up the Radiance </h1>
             <p></p>
+
+            <button className="btn">Experience the Glow</button>
         </div>
     </div>
   )

@@ -27,3 +27,7 @@ video{
     /* font-family: 'spaceColony-Medium', sans-serif; */
 
 }
+
+.hero-container h1{
+    font-size: 60px;
+}

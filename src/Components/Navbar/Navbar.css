@@ -16,13 +16,32 @@ ul li{
 ul li a{
     text-align: center;
     text-decoration: none;
-    color: #f5f5f5;
+    color: #f06908;
     cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .Hamburger{
     display: none;
     color: #f5f5f5;
+}
+.hero-container button{
+    background-color: rgb(191, 78, 8);
+    color: #f5f5f5;
+    font-size: 25px;
+    padding: 10px;
+    border: none;
+    border-radius:50px;
+    transform: ease-in-out;
+    transition: 0.5s;   
+    font-family: poppins;
+}
+
+.hero-container button:hover{
+    background-color: #f5f5f5;
+    color: rgb(191, 78, 8);
+    cursor: pointer;
 }
 
 @media(max-width: 480px), (max-width: 768px){
