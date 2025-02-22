@@ -1,5 +1,9 @@
 import React from 'react'
 import './About.css'
+import { PiChurchThin } from "react-icons/pi";
+import { GiCrystalShine } from "react-icons/gi";
+import { IoFlameOutline } from "react-icons/io5";
+import { GiMightySpanner } from "react-icons/gi";
 
 const About = () => {
    
@@ -19,24 +23,51 @@ const About = () => {
       <div className='services'>
         <h2>What We Do</h2>
 
-            <div className="concert">
-                <h3>Concert & Event Lighting</h3>
-                <p> Dynamic lighting setups for church concerts, live performances, and corporate events.</p>
+            <div className="concert container">
+                <div className="church-icon">
+                    <PiChurchThin className="icon" />
+                </div>
+                <div className="concert-text">
+                    <h3>Concert & Event Lighting</h3>
+                    <p> Dynamic lighting setups for church concerts, live performances, and corporate events.</p>
+                </div>
+                
             </div>
 
-            <div className="concert">
-                <h3>Wedding & Reception Lighting</h3>
-                <p> Elegant lighting designs to set the perfect romantic and celebratory mood.</p>
+            <div className="wedding container">
+                <div className="wedding-icon">
+                    <GiCrystalShine className="icon" />
+                </div>
+
+                <div className="wedding-text">
+                    <h3>Wedding & Reception Lighting</h3>
+                     <p> Elegant lighting designs to set the perfect romantic and celebratory mood.</p>
+                </div>
+            
             </div>
 
-            <div className="concert">
-                <h3>Theatrical & Stage Effects</h3>
-                <p> Professional lighting effects to bring drama, depth, and magic to your stage.</p>
+            <div className="stage container">
+                <div className="stage-icon">
+                    <IoFlameOutline className = "icon" />
+                </div>
+
+                <div className="stage-text">
+                    <h3>Theatrical & Stage Effects</h3>
+                    <p> Professional lighting effects to bring drama, depth, and magic to your stage.</p>
+                </div>
+               
             </div>
 
-            <div className="concert">
-                <h3> Installation & Technical Support</h3>
-                <p> Expert setup, testing, and on-site lighting management.</p>
+            <div className="installation container">
+                <div className="installation-icon">
+                    <GiMightySpanner className="icon" />
+                </div>
+
+                <div className="installation-text">
+                    <h3> Installation & Technical Support</h3>
+                    <p> Expert setup, testing, and on-site lighting management.</p>
+                </div>
+                
             </div>
         
       </div> 
