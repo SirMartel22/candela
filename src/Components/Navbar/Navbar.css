@@ -21,6 +21,20 @@ ul li a{
 }
 
 .Hamburger{
-    display: none;;
+    display: none;
+    color: #f5f5f5;
 }
 
+@media(max-width: 480px), (max-width: 768px){
+    .Hamburger{
+        display: block;
+    }
+ 
+    .navbarLink{
+        display: none;
+    }
+
+    .socials{
+        display: none;
+    }
+  }
