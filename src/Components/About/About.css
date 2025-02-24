@@ -55,7 +55,10 @@ span{
     align-items: left;
     justify-content: center;
     gap: 15px;
-    /* width: 450px; */
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+
+    
 }
 
 .services .container{
@@ -67,10 +70,12 @@ span{
 
 .services h2{
     color: rgb(191, 78, 8);
+    /* color: #000; */
 
 }
 .services .icon{
     color: rgb(191, 78, 8);
+    /* color: #000; */
     font-size: 60px;
 }
 
