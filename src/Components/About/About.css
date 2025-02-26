@@ -1,6 +1,6 @@
 .about-container{
-    background: rgb(25,17,8);
-    background: radial-gradient(circle, rgba(25,17,8,1) 0%, rgba(9,3,3,1) 100%);
+    background: rgb(44,26,15);
+    background: radial-gradient(circle, rgba(44,26,15,1) 0%, rgba(5,3,3,1) 100%);
     display: grid;
     grid-template-rows: repeat(1, 1fr);
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -10,10 +10,13 @@
     gap:50px;
 
 }
+
+
 .about{
     color: #f5f5f5;
     text-align: left;
 }
+
 
 span{
     color: rgb(191, 78, 8);
@@ -55,10 +58,6 @@ span{
     align-items: left;
     justify-content: center;
     gap: 15px;
-    background-color: transparent;
-    backdrop-filter: blur(10px);
-
-    
 }
 
 .services .container{
@@ -66,6 +65,7 @@ span{
     gap: 10px;
     align-items: center;
     /* justify-content: space-between; */
+    /* background-color: transparent; */
 }
 
 .services h2{

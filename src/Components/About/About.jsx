@@ -9,7 +9,8 @@ const About = () => {
    
   return (
     <div className='about-container'>
-      <div className='about'>
+
+     <div className='about'>
         <h1>Company Profile</h1>
         <p>At Candela, we bring events to life with cutting-edge stage lighting solutions that create unforgettable atmospheres. Whether it’s a 
              <span>church concert, wedding, corporate event, or naming ceremony,</span> our expert lighting designs set the perfect mood, 
@@ -47,6 +48,7 @@ const About = () => {
             </div>
 
             <div className="stage container">
+
                 <div className="stage-icon">
                     <IoFlameOutline className = "icon" />
                 </div>
@@ -69,8 +71,9 @@ const About = () => {
                 </div>
                 
             </div>
-        
-      </div> 
+    
+    </div>   
+      
      
     
     </div>
