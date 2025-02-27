@@ -13,7 +13,7 @@ const About = () => {
      <div className='about'>
         <h1>Company Profile</h1>
         <p>At Candela, we bring events to life with cutting-edge stage lighting solutions that create unforgettable atmospheres. Whether it’s a 
-             <span>church concert, wedding, corporate event, or naming ceremony,</span> our expert lighting designs set the perfect mood, 
+             <span> church concert, wedding, corporate event, or naming ceremony,</span> our expert lighting designs set the perfect mood, 
             transforming ordinary spaces into extraordinary experiences.
         </p>
 
