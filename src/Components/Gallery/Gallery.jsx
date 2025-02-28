@@ -11,10 +11,8 @@ const Gallery = () => {
     const [currentSet, setCurrentSet] = useState([])
     const [loading, setLoading] = useState(true);
     const imageRefs = useRef([]) //Refs for GSAP animations
-    const CLOUD_NAME = 'djhfy0pr4'
-    const API_KEY = '188441818727133'
-    const API_SECRET = 'Y5WO3zcvIf2tqSb_qXhv5YDo2og'
-    const FOLDER_ID = 'img/'
+    
+    // const FOLDER_ID = 'img/'
 
     //fetch and store image urls
     useEffect(() => {
