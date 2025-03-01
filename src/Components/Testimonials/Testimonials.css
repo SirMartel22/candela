@@ -1,7 +1,6 @@
 .testimonials-section{
     padding: 5% 10%;
     background: rgb(0,0,0);
-    /* background-image:linear-gradient(223deg, rgba(21, 18, 13, 0.873) 10%, rgba(64, 30, 6, 0.675) 76%), url(../../assets/mixer.jpg); */
     background: linear-gradient(223deg, rgba(0,0,0,0.99781162464986) 10%, rgba(48, 22, 3, 0.932) 76%);
     background-size: cover;
     background-repeat: no-repeat;

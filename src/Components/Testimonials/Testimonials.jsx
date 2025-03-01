@@ -65,7 +65,6 @@ const Testimonials = () => {
     return (
 
         <div className="testimonials-section">
-            {/* <div className="glass"> */}
             <div className="testimonials-description">
                 <h1>What Sets Us Apart</h1>
                 <p>At Candela, we don't just illuminate stages—we transform spaces into experiences. 
@@ -85,7 +84,6 @@ const Testimonials = () => {
                     {testimonies}
                 </div>
                
-            {/* </div> */}
             </div>
            
         </div>
