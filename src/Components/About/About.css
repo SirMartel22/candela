@@ -22,15 +22,16 @@ span{
     color: rgb(191, 78, 8);
 }
 .about h1{
-    font-size: 59px;
+    font-size: 45px;
     color: #eddbdb;  
     border-left: 4px solid  rgb(191, 78, 8);
     padding-left: 10px;
+    width: 200px;
 }
 
 .about p{
     line-height: 1.7em;
-    font-size: 14px;
+    font-size: 13px;
     margin: 20px 0;
 }
 
@@ -64,28 +65,25 @@ span{
     display: flex;
     gap: 10px;
     align-items: center;
-    /* justify-content: space-between; */
-    /* background-color: transparent; */
 }
 
 .services h2{
     color: rgb(191, 78, 8);
-    /* color: #000; */
-
+    font-size: 20px;
 }
 .services .icon{
     color: rgb(191, 78, 8);
-    /* color: #000; */
-    font-size: 60px;
+    font-size: 40px;
 }
 
 .services h3{
     color:  #eddbdb;  
-    font-size: 16px;
+    font-size: 14px;
+    
 }
 
 .services p{
-    font-size: 14px
+    font-size: 12px;
 }
 
 

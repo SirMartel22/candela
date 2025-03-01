@@ -15,16 +15,17 @@
 }
 
 .testimonials-description h1{
-    font-size: 50px;
+    font-size: 45px;
     color: #eddbdb;  
     border-left: 4px solid  rgb(191, 78, 8);
     padding-left: 10px;
+    width: 300px;
 }
 
 .testimonials-description p{
     line-height: 1.7em;
     margin: 10px 0;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .testimonials-description button{
@@ -63,11 +64,24 @@
     padding: 10px;
     transition: margin-left 0.3s ease;
     font-size: 13px;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(74, 42, 24, 0.484);
+    margin: 10px 0;
+    /* width: 30px; */
 }
 
-.middle.testimony{
+.testimony-card h4{
+    color:  rgb(191, 78, 8);
+}
+
+.middle-testimony{
     margin-left: -20px;
-    z-index: 1;
-    transform: scale(1.05);
+    z-index: 2;
+    /* transform: scale(1.05); */
 }
 
