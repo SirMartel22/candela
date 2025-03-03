@@ -11,7 +11,7 @@ body{
   font-family: poppins;
 }
 
-.Navbar{
+.nav-bar{
   position: fixed;
   display: flex;
   justify-content: space-between;

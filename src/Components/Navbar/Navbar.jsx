@@ -29,35 +29,35 @@ const Navbar = () => {
     const menuShow = () => {
         // showMenu ? setShowMenu(false) : setShowMenu(true);
         setShowMenu(!showMenu);
-        // console.log("clicked!!!")
-        // console.log(showMenu);
     }
 
     return (
 
-        <nav className={`Navbar ${sticky ? 'sticky-background' : ''}`} >
+        <nav className={`nav-bar ${sticky ? 'sticky-background' : ''}`} >
 
             <div className='logo'>
                 <img src={logo} />
             </div>
-            <ul className={`nav-link ${showMenu ? "show-menu" : ''}`}>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
+            <div className={`nav-link ${showMenu ? "show-menu" : ''}`}>
+                <ul className="links"> 
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
 
-            <ul className= "socials">
-                <li><a href=""><CiFacebook/></a></li>
-                <li><a href=""><FaWhatsapp /></a></li>
-                <li><a href=""><FaInstagram/></a></li>
-                <li><a href=""><PiTiktokLogoLight /></a></li>
-            </ul>
+                <ul className= "socials">
+                    <li><a href=""><CiFacebook/></a></li>
+                    <li><a href=""><FaWhatsapp /></a></li>
+                    <li><a href=""><FaInstagram/></a></li>
+                    <li><a href=""><PiTiktokLogoLight /></a></li>
+                </ul>
+
+            </div>
             <div className='Hamburger' >
                 <RxHamburgerMenu onClick={menuShow}/>
             </div>
         </nav>
- 
     )
 }
 
