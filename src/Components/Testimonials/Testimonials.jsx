@@ -73,7 +73,7 @@ const Testimonials = () => {
                     we craft the perfect ambience that makes each moment unforgettable. 
                     Lighting isn't just what we do—it's who we are.</p>
 
-                    <button>Become our VVIP</button>
+                    <button className="testimonial btn">Become our VVIP</button>
             </div>
 
             <div className="customer-testimonials">

@@ -28,24 +28,6 @@
     font-size: 13px;
 }
 
-.testimonials-description button{
-    background-color: rgb(191, 78, 8);
-    padding: 10px 20px;
-    border: none;
-    border-radius: 50px;
-    transition: ease-in-out;
-    transition: .5s;
-    font-family: poppins;
-    font-weight: 500;
-    color: #f5f5f5;
-    margin: 10px 0;
-}
-
-.testimonials-description button:hover{
-    background-color: #f5f5f5;
-    color: rgb(191, 78, 8);
-    cursor: pointer;
-}
 
 .customer-testimonials {
     overflow: hidden;
