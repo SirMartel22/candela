@@ -2,7 +2,7 @@
     text-align: center;
     padding: 5% 10%;
     background: rgb(45,27,19);
-    background: linear-gradient(90deg, rgba(56, 33, 24, 0.998) 10%, rgba(39,12,12,1) 76%);
+    background: linear-gradient(90deg, rgba(60, 34, 26, 0.998) 10%, rgb(35, 12, 12) 76%);
 }
 
 .video-container h1{
@@ -19,10 +19,30 @@
     margin: 20px 0;
 }
 
+.video-grid-container{
+    /* From https://css.glass */
+    background: rgb(77,49,18);
+background: radial-gradient(circle, rgba(77,49,18,1) 0%, rgba(9,3,3,1) 100%);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(80, 45, 29, 0.881);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(30, 20, 20, 0.3);
+    padding: 2% 5%;
+}
+
 .video-grid {
+    display: grid;
     grid-gap: 10px;
     grid-template-rows: repeat(250px, 1fr);
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin: 5% 0;
+}
+
+.video-grid-btn-text{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
 }
 
 .video-item{
@@ -79,4 +99,13 @@
     font-size: 24px;
     cursor: pointer;
     color: black;
+}
+
+@media(max-width: 768px){
+
+
+    .video-grid-btn-text{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
 }

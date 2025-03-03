@@ -31,8 +31,10 @@ const video = [
 
                     <h1>Relive Video from Past Event By Candela</h1>
                     <p>Candela's technology lets you relive past events through immersive, high-quality video experiences.</p>
+
+                  <div className="video-grid-container">
                     
-                    <div className="video-grid">
+                  <div className="video-grid">
                         {video.map((video) => (
                             <div key={video.id} className="video-item" onClick={() => setSelectedVideo(video.url) }>
                                 <iframe
@@ -44,6 +46,20 @@ const video = [
                         ))}
                     </div>
 
+
+                    <div className="video-grid-btn-text">
+
+                        <button className="explore btn">Explore more</button>
+
+                        <p className="video-grid-text">
+                        Step into the light and discover brilliance beyond limits.
+                        </p>
+                    </div>
+
+
+                 </div>  
+                   
+
                     {selectedVideo && (
                         <div className='modal' onClick = {() => setSelectedVideo(null)}>
                             <div className="modal-content" onClick={(e) => e.stopPropagation()}>
@@ -53,7 +69,6 @@ const video = [
                         </div>
                     )}
 
-                    <button className="explore btn">Explore more</button>
                 </div>
             );
         };
