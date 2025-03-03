@@ -27,9 +27,10 @@ const Navbar = () => {
     const [showMenu, setShowMenu] = useState(false);
 
     const menuShow = () => {
-        showMenu ? setShowMenu(false) : setShowMenu(true);
-        console.log("clicked!!!")
-        console.log(showMenu);
+        // showMenu ? setShowMenu(false) : setShowMenu(true);
+        setShowMenu(!showMenu);
+        // console.log("clicked!!!")
+        // console.log(showMenu);
     }
 
     return (
@@ -39,7 +40,7 @@ const Navbar = () => {
             <div className='logo'>
                 <img src={logo} />
             </div>
-            <ul className={showMenu ? "" : 'hide-menu'}>
+            <ul className={`nav-link ${showMenu ? "show-menu" : ''}`}>
                 <li><a href="">Home</a></li>
                 <li><a href="">About</a></li>
                 <li><a href="">Services</a></li>
