@@ -5,6 +5,7 @@ import About from './Components/About/About'
 import Gallery from './Components/Gallery/Gallery'
 import Testimonials from './Components/Testimonials/Testimonials'
 import Video from './Components/Video/Video'
+import Organization from './Components/Organization/Organization'
 import Contact from './Components/Contact/Contact';
 
 
@@ -17,9 +18,10 @@ const App = () =>{
       <Navbar />
       <Hero />
       <About />
-      <Gallery />
+      {/* <Gallery /> */}
       <Testimonials />
       <Video />
+      <Organization />
       {/* <Contact /> */}
     </div>
   )

@@ -1,10 +1,38 @@
 import React from 'react';
 import {useState, useEffect} from 'react';
 import './Organization.css'
+import bowenLogo from '../../assets/bowen.png'
+import KwaraTvLogo from '../../assets/kwaraTv.jpg'
+import skilledAward from '../../assets/skilled-award.jpg'
+import pAssemblyLogo from '../../assets/p-assembly.png'
+import redeemersLogo from '../../assets/redeemers.png'
+import landmarkLogo from '../../assets/landmark.png'
+import KTvLogo from '../../assets/kwaraTv.jpg'
+import skAward from '../../assets/skilled-award.jpg'
 
 
 const Organization = () => {
 
+        const imageArr = [ 
+            bowenLogo, 
+            KwaraTvLogo, 
+            skilledAward, 
+            pAssemblyLogo,
+            redeemersLogo,
+            landmarkLogo,
+            KTvLogo,
+            skAward
+        ];
+        console.log(imageArr);
+
+        const setImage = imageArr.map((eachImage) => {
+
+            return(
+                <div className="image" key={eachImage}>
+                    <img src={eachImage}/>
+                </div>
+            )
+        })
 
     return (
 
@@ -20,7 +48,7 @@ const Organization = () => {
             </div>
 
             <div className="organization-png">
-                
+                {setImage}
             </div>
         </div>
     )
