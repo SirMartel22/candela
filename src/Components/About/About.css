@@ -13,14 +13,14 @@
 
 
 .about{
-    color: #f5f5f5;
     text-align: left;
 }
 
 
 span{
-    color: rgb(191, 78, 8);
+    color: rgb(205, 88, 88);
 }
+
 .about h1{
     font-size: 45px;
     color: #eddbdb;  
@@ -31,8 +31,10 @@ span{
 
 .about p{
     line-height: 1.7em;
-    font-size: 13px;
+    font-size: 14px;
     margin: 20px 0;
+    color: #f5f5f5;
+
 }
 
 .aboutBtn{
@@ -78,12 +80,23 @@ span{
 
 .services h3{
     color:  #eddbdb;  
-    font-size: 14px;
+    font-size: 15px;
     
 }
 
 .services p{
-    font-size: 12px;
+    font-size: 14px;
+}
+
+@media(max-width: 768px){
+    
+    .about p{
+        line-height: 1.7em;
+        font-size: 15px;
+        margin: 20px 0;
+        color: #f5f5f5;
+    
+    }
 }
 
 

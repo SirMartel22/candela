@@ -21,7 +21,6 @@
 }
 
 .video-grid-container{
-    /* From https://css.glass */
     background: rgb(77,49,18);
     background: radial-gradient(circle, rgba(77,49,18,1) 0%, rgba(9,3,3,1) 100%);
     border-radius: 16px;
@@ -104,9 +103,22 @@
 
 @media(max-width: 768px){
 
+    .video-container{
+        padding: 2% 5%;
+    }
 
     .video-grid-btn-text{
         flex-direction: column-reverse;
         align-items: center;
     }
+
+    .video-container h1{
+        font-size: 200%;
+    }
+
+    .video-grid-container{
+        background: none;
+    }
+
+
 }
