@@ -1,5 +1,6 @@
 import React from 'react';
 import './Join.css'
+import stageLight from '../../assets/stageLighting.jpg'
 
 
 const Join = () => {
@@ -9,7 +10,7 @@ const Join = () => {
 
         <div className= "join-container">
             <div className="join-img">
-                <img src=""/>
+                <img src={stageLight}/>
             </div>
 
             <div className="join-text">
