@@ -2,33 +2,34 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
     padding: 5% 0;
-    background: rgb(77,49,18);
-    background: radial-gradient(circle, rgba(77,49,18,1) 0%, rgba(9,3,3,1) 100%);
-    box-shadow: 0 4px 30px rgba(80, 45, 29, 0.881);
-    backdrop-filter: blur(5px);
+    background: linear-gradient(
+                    to bottom right, 
+                    rgba(57, 47, 45, 0.6), 
+                    rgba(55, 43, 29, 0.6)
+                ), 
+                url('../../assets/mixer.jpg');
+    background-size: cover;
+    backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(30, 20, 20, 0.3);
 }
 
 .join-text{
-    width: 500px;
-    padding: 7% 0;
-    background:  rgb(191, 78, 8);
-    box-shadow: 0 4px 30px rgba(102, 63, 44, 0.881);
+    width: 90%;
+    padding: 7% 10%;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(30, 20, 20, 0.4);
+    /* border: 1px solid rgba(30, 20, 20, 0.658); */
     border-radius: 10px;
-    margin-left: -140px;
     text-align: center;
     color: #f5f5f5;
 
 }
 
 .join-text h4 {
-    font-size: 35px;
+    font-size: 50px;
 }
 
 .join-text p{

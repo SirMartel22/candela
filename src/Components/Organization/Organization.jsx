@@ -6,7 +6,7 @@ import KwaraTvLogo from '../../assets/kwaraTv.jpg'
 import skilledAward from '../../assets/skilled-award.jpg'
 import pAssemblyLogo from '../../assets/p-assembly.png'
 import redeemersLogo from '../../assets/redeemers.png'
-import landmarkLogo from '../../assets/landmark.png'
+import landmarkLogo from '../../assets/landmark.jpg'
 import KTvLogo from '../../assets/kwaraTv.jpg'
 import skAward from '../../assets/skilled-award.jpg'
 

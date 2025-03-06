@@ -10,7 +10,7 @@ const Join = () => {
 
         <div className= "join-container">
             <div className="join-img">
-                <img src={stageLight}/>
+                {/* <img src={stageLight}/> */}
             </div>
 
             <div className="join-text">
