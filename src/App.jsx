@@ -7,6 +7,8 @@ import Testimonials from './Components/Testimonials/Testimonials'
 import Video from './Components/Video/Video'
 import Organization from './Components/Organization/Organization'
 import Contact from './Components/Contact/Contact';
+import Join from './Components/Join/Join';
+import Footer from './Components/Footer/Footer';
 
 
 
@@ -22,7 +24,9 @@ const App = () =>{
       <Testimonials />
       <Video />
       <Organization />
-      {/* <Contact /> */}
+      <Join />
+      <Contact />
+      <Footer />
     </div>
   )
 
