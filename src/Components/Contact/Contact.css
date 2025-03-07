@@ -30,7 +30,7 @@
 
 input[type="text"], input[type="email"]{
     background: none;
-    color: blue;
+    color: rgba(236, 232, 228, 0.886);
     height: 40px;
     border-top: transparent;
     border-left: transparent;

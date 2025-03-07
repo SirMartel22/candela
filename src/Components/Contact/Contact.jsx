@@ -52,8 +52,7 @@ const Contact = () => {
                             <LuCalendarClock />
                             <p>Available 24/7 </p>
                         </div>
-                
-
+    
             </div>
 
 
