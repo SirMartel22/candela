@@ -23,30 +23,20 @@ const Gallery = () =>{
         <div className="gallery-container">
             <h1>For your Perusal</h1>
 
-            <div className="grid-container-1">
-
-                <div className="first-image-grid">
-                    <img src={imgLandscape1}/>
-                    <img src={p1}/>
-                    <img src={imgLandscape2}/>
-                </div>
-
-                <div className='second-image-grid'>
-                    <img src={Landscape1}/>
-                    <img src={mixer1}/>
-                    <img src={lighting}/>
-                </div>
-
+            <div className= 'grid-container'>
+            
+                <img src={imgLandscape1} className="first-img"/>
+                <img src={p1} className="second-img"/>
+                <img src={imgLandscape2} className="third-img"/>
+            
+                <img src={Landscape1} className="fourth-img"/>
+                <img src={mixer1} className="fifth-img"/>
+                <img src={lighting} className="sixth-img"/>
+           
+                <img src={lighting2} className="seventh-img"/>
+                <img src={mixer2} className="eighth-img"/>
+                <img src={Landscape2} className="nineth-img"/>
             </div>
-          
-        <div className="grid-container-2">
-            <div className='second-image-grid'>
-                <img src={lighting2}/>
-                <img src={mixer2}/>
-                <img src={Landscape2}/>
-            </div>
-        </div>
-          
 
         </div>
     )
