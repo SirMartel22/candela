@@ -1,7 +1,7 @@
 .testimonials-section{
     padding: 5% 10%;
-    background: rgb(0,0,0);
-    background: linear-gradient(223deg, rgba(0,0,0,0.99781162464986) 10%, rgba(48, 22, 3, 0.932) 76%);
+    background: rgb(44,26,15);
+    background: radial-gradient(circle, rgba(44,26,15,1) 0%, rgba(5,3,3,1) 100%);
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;

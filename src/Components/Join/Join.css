@@ -37,3 +37,9 @@
     box-shadow: 0 4px 30px rgba(61, 39, 28, 0.881);
 
 }
+
+@media(max-width: 768px){
+    .join-text h4 {
+        font-size: 30px;
+    }
+}

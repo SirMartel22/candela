@@ -68,3 +68,12 @@
     border-radius: 7px;
     box-shadow: 0 4px 30px rgba(80, 45, 29, 0.881);
 }
+
+@media(max-width: 768px){
+    .grid-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;  
+    }   
+}

@@ -65,3 +65,9 @@ input::placeholder{
     display: flex;
     gap: 24px;
 }
+
+@media(max-width: 768px){
+    .contact-container{
+        padding: 5% 5%;
+    }
+}
