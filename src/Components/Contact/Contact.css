@@ -25,7 +25,6 @@
     align-items: left;
     justify-content: start;
     gap: 30px;
-    /* width: 100%; */
 }
 
 input[type="text"], input[type="email"]{
@@ -70,4 +69,8 @@ input::placeholder{
     .contact-container{
         padding: 5% 5%;
     }
+}
+
+@media(max-width: 480px){
+
 }
