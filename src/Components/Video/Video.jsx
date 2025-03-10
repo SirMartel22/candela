@@ -43,7 +43,7 @@ const video = [
 
             return (
 
-                <div className = "video-container">
+                <div className = "video-container" id='video'>
 
                     <div className="video-header">
                         <h1>Relive Video from Past Event By Candela</h1>

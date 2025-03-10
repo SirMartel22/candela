@@ -4,11 +4,12 @@ import { PiChurchThin } from "react-icons/pi";
 import { GiCrystalShine } from "react-icons/gi";
 import { IoFlameOutline } from "react-icons/io5";
 import { GiMightySpanner } from "react-icons/gi";
+import {Link as ScrollLink} from 'react-scroll'
 
 const About = () => {
    
   return (
-    <div className='about-container'>
+    <div className='about-container' id='about'>
 
      <div className='about'>
         <h1>Company Profile</h1>
@@ -17,7 +18,11 @@ const About = () => {
             transforming ordinary spaces into extraordinary experiences.
         </p>
 
-        <button className="aboutBtn">View Our Work</button>
+        <button className="aboutBtn">
+            <ScrollLink to='video' spy={true} smooth={true} duration={800}>
+                View Our Work
+            </ScrollLink>
+        </button>
         
       </div> 
 

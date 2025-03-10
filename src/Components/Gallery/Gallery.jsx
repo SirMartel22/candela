@@ -20,7 +20,7 @@ const Gallery = () =>{
 
     return (
 
-        <div className="gallery-container">
+        <div className="gallery-container" id='gallery'>
             <h1>For your Perusal</h1>
 
             <div className= 'grid-container'>

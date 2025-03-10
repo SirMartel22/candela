@@ -9,6 +9,7 @@ import Organization from './Components/Organization/Organization'
 import Contact from './Components/Contact/Contact';
 import Join from './Components/Join/Join';
 import Footer from './Components/Footer/Footer';
+import Testing from './Components/Test/Testing'
 
 
 
@@ -23,6 +24,7 @@ const App = () =>{
       <Gallery />
       <Video />
       <Organization />
+      <Testing />
       <Join />
       <Testimonials />
       <Contact />

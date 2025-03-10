@@ -8,6 +8,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { PiTiktokLogoLight } from "react-icons/pi";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { Link as ScrollLink } from 'react-scroll'
 
 
 
@@ -34,23 +35,37 @@ const Navbar = () => {
     return (
 
         <nav className={`nav-bar ${sticky ? 'sticky-background' : ''}`} >
+           
 
             <div className='logo'>
                 <img src={logo} />
             </div>
             <div className={`nav-link ${showMenu ? "show-menu" : ''}`}>
-                <ul className="links"> 
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">Contact</a></li>
+                <ul className="links">
+                    
+                    <ScrollLink to="hero" spy={true} smooth={true} duration={500}>
+                        <li>Home</li>
+                    </ScrollLink>
+                    
+                    <ScrollLink to="about" spy={true} smooth={true} duration={500}>
+                        <li>About</li>
+                    </ScrollLink>
+
+                    <ScrollLink to="gallery" spy={true} smooth={true} duration={500}>
+                        <li>Gallery</li>
+                    </ScrollLink>
+
+                    <ScrollLink to="contact" spy={true} smooth={true} duration={500}>
+                        <li>Contact</li>
+                    </ScrollLink>
                 </ul>
 
                 <ul className= "socials">
+
                     <li><a href=""><CiFacebook/></a></li>
-                    <li><a href=""><FaWhatsapp /></a></li>
+                    <li><a href="https://wa.me/2347030078373" target='blank' rel='noopener noreferrer' ><FaWhatsapp /></a></li>
                     <li><a href=""><FaInstagram/></a></li>
-                    <li><a href=""><PiTiktokLogoLight /></a></li>
+                    <li><a href= "https://www.tiktok.com/@candelastagelights?is_from_webapp=1&sender_device=pc" target='blank' rel='noopener,noreferrer'><PiTiktokLogoLight /></a></li>
                 </ul>
 
             </div>

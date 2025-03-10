@@ -18,10 +18,7 @@
 
 .links li {
     list-style-type: none;
-    margin: 10px
-}
-
-.nav-link li a{
+    margin: 10px;
     text-align: center;
     text-decoration: none;
     color: #f06908;
@@ -29,6 +26,7 @@
     font-size: 13px;
     font-weight: bold;
 }
+
 
 
 /* Social links to social media pages */
@@ -48,13 +46,14 @@
 .socials li {
     list-style: none;
     margin-top: 3px;
+    
 }
 
 .socials li a{
     color: #cd6a0ed0;
     gap: 5px;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 17px;
     /* margin-top: 3px; */
 }
 

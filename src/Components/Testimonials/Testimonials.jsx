@@ -1,6 +1,7 @@
 import React from 'react'
 import './Testimonials.css'
 import {useState, useEffect} from 'react'
+import {Link as ScrollLink} from 'react-scroll'
 
 
 
@@ -73,7 +74,10 @@ const Testimonials = () => {
                     we craft the perfect ambience that makes each moment unforgettable. 
                     Lighting isn't just what we do—it's who we are.</p>
 
-                    <button className="testimonial btn">Become our VVIP</button>
+                    <button className="testimonial btn">
+                        <ScrollLink to='contact' spy={true} smooth={true} duration={500}> 
+                            Become our VVIP
+                            </ScrollLink></button>
             </div>
 
             <div className="customer-testimonials">
