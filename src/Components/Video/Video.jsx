@@ -7,17 +7,33 @@ import {useState, useEffect} from 'react';
 const video = [
     {
         id:1,
-        url:'https://www.youtube.com/embed/N8vF2gUt2Oo?si=1_91Em38-_Zv56jk'
+        url: 'https://www.youtube.com/embed/I8_CzUszSW4?si=zIAZlsyChZ46KAoP'
     },
 
     {
         id:2,
-        url:'https://www.youtube.com/embed/kYnRKOgZulU?si=9UtNvIts_pqzgUdj'
+        url: 'https://youtube.com/embed/nZDuX4Prg4Y?si=WJgqOx9nkim4ZiPy'
     },
 
     {
         id:3,
-        url:'https://www.youtube.com/embed/5YVkwGUkf58?si=Ekl3_YuHSe9nD0wd'
+        url: 'https://www.youtube.com/embed/tBu8TS8Gc5o?si=6NtrK0N7ccFOnG83'
+    },
+
+    {
+        id:4,
+        url: 'https://www.youtube.com/embed/fQh_CjEu7XM?si=1q8oUwi8XN3nVkgd'
+    },
+
+    {
+        id:5,
+        url: 'https://www.youtube.com/embed/cuxWI-qenXI?si=Go10H16-DrPvkjk9y'
+    },
+
+    {
+        id:6,
+        // url:'https://www.youtube.com/embed/5YVkwGUkf58?si=Ekl3_YuHSe9nD0wd'
+        url: 'https://www.youtube.com/embed/_ghv9qRX5RA?si=-on6RxF2bdSMw7hE'
     },
 ];
 
@@ -29,8 +45,12 @@ const video = [
 
                 <div className = "video-container">
 
-                    <h1>Relive Video from Past Event By Candela</h1>
-                    <p>Candela's technology lets you relive past events through immersive, high-quality video experiences.</p>
+                    <div className="video-header">
+                        <h1>Relive Video from Past Event By Candela</h1>
+                        <p>Candela's technology lets you relive past events through immersive, high-quality video experiences.</p>
+                    </div>
+                    
+                   
 
                   <div className="video-grid-container">
                     

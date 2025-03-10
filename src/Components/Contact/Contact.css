@@ -12,7 +12,6 @@
     gap: 80px;
     color: #f5f5f5;
     border-radius: 16px;
-    /* box-shadow: 0 4px 35px rgba(77, 68, 68, 0.122); */
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(79, 69, 63, 0.3);
@@ -47,7 +46,6 @@ input::placeholder{
     text-align: left;
 }
 
-
 .contact-info{
     display: flex;
     flex-direction: column;
@@ -57,7 +55,6 @@ input::placeholder{
     justify-content: start;
     align-items: start;
     text-align: left;
-     
 }
 
 .info-div{
