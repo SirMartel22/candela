@@ -7,7 +7,7 @@ import skilledAward from '../../assets/skilled-award.jpg'
 import pAssemblyLogo from '../../assets/p-assembly.png'
 import redeemersLogo from '../../assets/redeemers.png'
 import landmarkLogo from '../../assets/landmark.jpg'
-import KTvLogo from '../../assets/kwaraTv.jpg'
+import KTvLogo from '../../assets/adidas.png'
 import skAward from '../../assets/skilled-award.jpg'
 
 
@@ -25,21 +25,18 @@ const Testing = () => {
         ];
         console.log(brandArr);
 
-        const globalStyle = {
-            
-        }
 
-        const showImage = brandArr.map((Image) => {
+        // const showImage = brandArr.map((Image) => {
 
-            console.log(Image);
-            return(
-                <div className="image" key={Image}>
-                    <img src={Image}/>
-                </div>
-            )
-        })
+        //     console.log(Image);
+        //     return(
+        //         <div className="image" key={Image}>
+        //             <img src={Image}/>
+        //         </div>
+        //     )
+        // })
 
-        console.log(showImage);
+        // console.log(showImage);
 
     return (
 
@@ -54,8 +51,19 @@ const Testing = () => {
                     Candela and they trust us with their Event Lighting</p>
             </div>
 
-            <div className="organization-png">
-                {showImage}
+            <div className="organization-logo">
+                {/* {showImage} */}
+
+                <img src={brandArr[0]}  className="image image-1"/>
+                <img src={brandArr[1]}  className="image image-2"/>
+                <img src={brandArr[2]}  className="image image-3"/>
+                <img src={brandArr[3]}  className="image image-4"/>
+                
+                <img src={brandArr[4]}  className="image image-5"/>
+                <img src={brandArr[5]}  className="image image-6"/>
+                <img src={brandArr[6]}  className="image image-7"/>
+                <img src={brandArr[7]}  className="image image-8"/>
+
             </div>
         </div>
     )

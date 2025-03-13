@@ -62,9 +62,9 @@ const Navbar = () => {
 
                 <ul className= "socials">
 
-                    <li><a href=""><CiFacebook/></a></li>
+                    <li><a href="https://www.facebook.com/share/14wdGTrrEP/?mibextid=LQQJ4d"><CiFacebook/></a></li>
                     <li><a href="https://wa.me/2347030078373" target='blank' rel='noopener noreferrer' ><FaWhatsapp /></a></li>
-                    <li><a href=""><FaInstagram/></a></li>
+                    <li><a href="https://www.instagram.com/candela.consult/"><FaInstagram/></a></li>
                     <li><a href= "https://www.tiktok.com/@candelastagelights?is_from_webapp=1&sender_device=pc" target='blank' rel='noopener,noreferrer'><PiTiktokLogoLight /></a></li>
                 </ul>
 

@@ -5,7 +5,7 @@ import About from './Components/About/About'
 import Gallery from './Components/Gallery/Gallery'
 import Testimonials from './Components/Testimonials/Testimonials'
 import Video from './Components/Video/Video'
-import Organization from './Components/Organization/Organization'
+// import Organization from './Components/Organization/Organization'
 import Contact from './Components/Contact/Contact';
 import Join from './Components/Join/Join';
 import Footer from './Components/Footer/Footer';
@@ -23,7 +23,7 @@ const App = () =>{
       <About />
       <Gallery />
       <Video />
-      <Organization />
+      {/* <Organization /> */}
       <Testing />
       <Join />
       <Testimonials />

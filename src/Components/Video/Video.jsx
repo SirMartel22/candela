@@ -69,7 +69,10 @@ const video = [
 
                     <div className="video-grid-btn-text">
 
-                        <button className="explore btn">Explore more</button>
+                        <button className="explore btn">
+                            <a href= "https://www.tiktok.com/@candelastagelights?is_from_webapp=1&sender_device=pc" target='blank' rel='noopener,noreferrer'>
+                            Explore more</a>
+                        </button>
 
                         <p className="video-grid-text">
                         Step into the light and discover brilliance beyond limits.
