@@ -25,14 +25,21 @@ const Testing = () => {
         ];
         console.log(brandArr);
 
+        const globalStyle = {
+            
+        }
+
         const showImage = brandArr.map((Image) => {
 
+            console.log(Image);
             return(
                 <div className="image" key={Image}>
                     <img src={Image}/>
                 </div>
             )
         })
+
+        console.log(showImage);
 
     return (
 
