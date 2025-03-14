@@ -57,14 +57,21 @@
 } */
 
 .organization-logo{
-    border: 1px solid red;
-    width: 90%;
+    width: 100%;
     max-width: 1440px;
     margin-inline: auto;
     position: relative;
-    height: 300px;
+    height: 80px;
+    padding: 5px;
     margin-top: 3%;
     overflow: hidden;
+    mask-image: linear-gradient(
+        to right,
+        rgba(0,0,0,0),
+        rgba(0,0,0,1) 20%,
+        rgba(0,0,0,1) 80%,
+        rgba(0,0,0,0) 
+    );
 }
 
 @keyframes scrollLeft {
@@ -78,7 +85,7 @@
     background-color: none;
     border-radius: 10px;
     position: absolute;
-    left: 100%;
+    left: max(calc(150px * 8), 100%);
     animation-name: scrollLeft;
     animation-duration: 30s;
     animation-timing-function: linear;
