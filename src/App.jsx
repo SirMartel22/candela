@@ -10,6 +10,7 @@ import Contact from './Components/Contact/Contact';
 import Join from './Components/Join/Join';
 import Footer from './Components/Footer/Footer';
 import Testing from './Components/Test/Testing'
+import NewSlider from './Components/NewSlider/NewSlider'
 
 
 
@@ -22,6 +23,7 @@ const App = () =>{
       <Hero />
       <About />
       <Gallery />
+      <NewSlider />
       <Video />
       {/* <Organization /> */}
       <Testing />
