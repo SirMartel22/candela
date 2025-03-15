@@ -24,20 +24,7 @@ const Testing = () => {
             skAward
         ];
         console.log(brandArr);
-
-
-        // const showImage = brandArr.map((Image) => {
-
-        //     console.log(Image);
-        //     return(
-        //         <div className="image" key={Image}>
-        //             <img src={Image}/>
-        //         </div>
-        //     )
-        // })
-
-        // console.log(showImage);
-
+        
     return (
 
         <div className='organization-container'>
@@ -52,7 +39,6 @@ const Testing = () => {
             </div>
 
             <div className="organization-logo">
-                {/* {showImage} */}
 
                 <img src={brandArr[0]}  className="image image-1"/>
                 <img src={brandArr[1]}  className="image image-2"/>

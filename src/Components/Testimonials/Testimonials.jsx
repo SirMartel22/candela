@@ -40,7 +40,7 @@ const Testimonials = () => {
     useEffect(() => {
         const timer = setInterval(() => {
             setCurrentIndex((prevIndex) => prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1); 
-        }, 5000); //Slide every 5 seconds
+        }, 7000); //Slide every 5 seconds
 
         return () => clearInterval(timer); //Cleanup on unmount
     }, [testimonials.length]);
@@ -72,20 +72,24 @@ const Testimonials = () => {
                     Our lights breathe life into every performance, creating moods that captivate audiences and elevate artists. 
                     From warm intimate glows to powerful dynamic beams, 
                     we craft the perfect ambience that makes each moment unforgettable. 
-                    Lighting isn't just what we do—it's who we are.</p>
+                    Lighting isn't just what we do—it's who we are.
+                </p>
 
                     <button className="testimonial btn">
                         <ScrollLink to='contact' spy={true} smooth={true} duration={500}> 
                             Become our VVIP
-                            </ScrollLink></button>
-            </div>
+                            </ScrollLink>
+                    </button>
+             </div>
 
             <div className="customer-testimonials">
                 <div className="testimonials-slider" style = {{
-                     transform: `translateY(-${currentIndex * 33.33}%)`,
+                    transform: `translateY(-${currentIndex * 33.33}%)`,
                     transition: 'transform 0.5s ease-in-out'
-                }}>
+                    }}>
+
                     {testimonies}
+
                 </div>
                
             </div>
