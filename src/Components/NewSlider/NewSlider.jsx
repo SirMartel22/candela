@@ -23,7 +23,7 @@ const ImageSlider = ({slides}) => {
     }
 
     const slideStyles = {
-        width: '100%',
+        width: '150%',
         height: "100%",
         borderRadius: "10px",
         backgroundPosition: 'center',
@@ -51,7 +51,7 @@ const ImageSlider = ({slides}) => {
         color: "#fff",
         zIndex: 1,
         cursor: 'pointer',
-        transition: '0.5 ease in-out'
+        // transition: '0.5 ease in-out'
     }
 
     // defining the click event for previous button
@@ -62,12 +62,6 @@ const ImageSlider = ({slides}) => {
         const newIndex = isFirstSlide ? slides.length - 1 : currentIndex -1;
         setCurrentIndex(newIndex);
     };
-
-    // const previous = () => {
-    //     const isFirstSlide = currentIndex === 0;
-    //     const nextIndex = isFirstSlide ? slides.length - 1: currentIndex - 1
-    //     setCurrentIndex(nextIndex)
-    // }
 
     //defining the click event fornext button
 
@@ -90,7 +84,6 @@ const ImageSlider = ({slides}) => {
     )
 }
 
-
 const NewSlider = () => {
 
     const slides = [
@@ -106,21 +99,19 @@ const NewSlider = () => {
         {image: image_10, title: "image10"},
     ]
 
-   
-
     const containerStyles = {
         width: '500px',
         height: '280px',
         margin: '0 auto', 
         padding: "20px",
+        
     }
 
     return (
-        <div>
+        <div className="image-gallery">
             <h1>Gallery of Image for Your Perusal</h1>
             <div style ={containerStyles}>
                 <ImageSlider slides= {slides} />
-                {/* {imageSlider } */}
             </div>
         </div>
     )
