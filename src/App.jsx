@@ -11,6 +11,8 @@ import Join from './Components/Join/Join';
 import Footer from './Components/Footer/Footer';
 import Testing from './Components/Test/Testing'
 import NewSlider from './Components/NewSlider/NewSlider'
+// import NewTestimony from './Components/NewTestimony/NewTestimony'
+import NewTestimony from './Components/Testimonials/NewTestimony';
 
 
 
@@ -28,7 +30,8 @@ const App = () =>{
       {/* <Organization /> */}
       <Testing />
       <Join />
-      <Testimonials />
+      {/* <Testimonials /> */}
+      <NewTestimony />
       <Contact />
       <Footer />
     </div>
