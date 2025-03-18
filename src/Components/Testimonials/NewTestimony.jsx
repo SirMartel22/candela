@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Testimonials.css'
 import { MdOutlineArrowBackIosNew } from "react-icons/md";
 import { MdOutlineArrowForwardIos } from "react-icons/md";
+import { Link as ScrollLink } from 'react-scroll'
 
 const TestimonySlider = ({testimonials}) => {
 
@@ -12,7 +13,7 @@ const TestimonySlider = ({testimonials}) => {
         const firstTestimony = currentTestimony === 0
 
         //create new newTestimony slide
-        const newTestimony = firstTestimony ? slides.length - 1 : currentTestimony - 1;
+        const newTestimony = firstTestimony ? testimonials.length - 1 : currentTestimony - 1;
 
         //set newTestimony as currentTestimony
         setCurrentTestimony(newTestimony)
@@ -22,7 +23,7 @@ const TestimonySlider = ({testimonials}) => {
     const nextBtn = () => {
 
         //check is we're view the last testimony
-        const lastTestimony = currentTestimony === slides.length - 1;
+        const lastTestimony = currentTestimony === testimonials.length - 1;
 
         //create new testimony slide
         const newTestimony = lastTestimony ? 0 : currentTestimony + 1;
@@ -33,20 +34,19 @@ const TestimonySlider = ({testimonials}) => {
     }
 
         const testimonyStyles = {
-            width: "50%",
+            width: "45%",
             height: "100%",
             borderRadius: "20px",
-            backgroundPosition: "center",
-            backgroundSize: "cover",
-            background: ``,
+            position: 'relative',
             color: "#f5f5f5",
+            overflow: 'hidden',
+            // alignContent: 'center',
         }
 
         const nextButton = {
             fontSize: "45px",
             position: "absolute",
-            transform: "translate(0, -50px)",
-            right: "32px",
+            right: "400px",
             color: "f5f5f5",
             zIndex: 1,
             cursor: "pointer"
@@ -55,10 +55,9 @@ const TestimonySlider = ({testimonials}) => {
         const prevButton ={
             fontSize: "45px",
             position: "absolute",
-            transform: "translate(0, -50px)",
-            left: "32px",
+            // left: "1200px",
             color: "#f5f5f5",
-            zIndex: "1",
+            zIndex: 1,
             cursor: "pointer"
         }
 
@@ -77,6 +76,8 @@ const TestimonySlider = ({testimonials}) => {
                 <p>{testimonials[currentTestimony].post}</p>
                 <h1>{testimonials[currentTestimony].name}</h1>
             </div>
+
+      
             
         </div>
     )
@@ -113,9 +114,23 @@ const NewTestimony = () => {
 
     return (
 
+        <div className="testimonials-section">
+            <div className="testimonials-description">
+                <h1>What Sets Us Apart</h1>
+                <p>At Candela, we don't just illuminate stages—we transform spaces into experiences. 
+                    Our lights breathe life into every performance, creating moods that captivate audiences and elevate artists. 
+                    From warm intimate glows to powerful dynamic beams, 
+                    we craft the perfect ambience that makes each moment unforgettable. 
+                    Lighting isn't just what we do—it's who we are.
+                </p>
 
+                <button className="testimonial btn">
+                    <ScrollLink to='contact' spy={true} smooth={true} duration={500}> 
+                        Become our VVIP
+                        </ScrollLink>
+                </button>
+            </div>
 
-        <div >
             <TestimonySlider testimonials={testimonials} />
         </div>
     )
