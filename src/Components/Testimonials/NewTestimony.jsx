@@ -17,7 +17,6 @@ const TestimonySlider = ({testimonials}) => {
 
         //set newTestimony as currentTestimony
         setCurrentTestimony(newTestimony)
-
     }
 
     const nextBtn = () => {
@@ -76,9 +75,6 @@ const TestimonySlider = ({testimonials}) => {
                 <p>{testimonials[currentTestimony].post}</p>
                 <h1>{testimonials[currentTestimony].name}</h1>
             </div>
-
-      
-            
         </div>
     )
 }
