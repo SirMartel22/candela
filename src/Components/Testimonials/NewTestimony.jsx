@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Testimonials.css'
-import { MdOutlineArrowBackIosNew } from "react-icons/md";
-import { MdOutlineArrowForwardIos } from "react-icons/md";
+import { MdOutlineArrowBackIosNew, MdOutlineArrowForwardIos } from "react-icons/md";
 import { Link as ScrollLink } from 'react-scroll'
 
 const TestimonySlider = ({testimonials}) => {
 
     const [currentTestimony, setCurrentTestimony] = useState(0)
+    const [direction, setDirection] = useState("") // Track the direction of the slide;
 
     const prevBtn = () => {
         //check if we are currently in the firstSlude
@@ -14,11 +14,15 @@ const TestimonySlider = ({testimonials}) => {
 
         //create new newTestimony slide
         const newTestimony = firstTestimony ? testimonials.length - 1 : currentTestimony - 1;
+        
+        //Set direction for sliding in from the left
+        setDirection('left');
 
         //set newTestimony as currentTestimony
         setCurrentTestimony(newTestimony)
     }
 
+      
     const nextBtn = () => {
 
         //check is we're view the last testimony
@@ -27,42 +31,100 @@ const TestimonySlider = ({testimonials}) => {
         //create new testimony slide
         const newTestimony = lastTestimony ? 0 : currentTestimony + 1;
 
+        // Set Direction for sliding in from the right
+        setDirection("right");
         // set current testimony as the newTestimony
         setCurrentTestimony(newTestimony)
 
     }
 
+    //Automatically slide every 7 seconds
+    // useEffect (() => {
+    //     const interval = setInterval(()=>{
+    //         setDirection('right');
+    //         setCurrentTestimony(prev => (prev === testimonials.length -1 ? 0 : prev + 1));
+    //     }, 7000);
+    //     return () => clearInterval(interval);
+    // }, [])
+
+
+    useEffect(()=>{
+        setDirection(""); //reset animation class first
+        setTimeout(()=> {
+          setDirection("right");
+        }, 10) //Reapply the class after a short delay
+      }, [currentTestimony]);
+      
+
+    useEffect(()=>{
+        const interval = setInterval(() => {
+            nextBtn();
+        }, 7000)
+        return () => clearInterval(interval);
+      }, []);
+
+      
+  
+
         const testimonyStyles = {
-            width: "45%",
-            height: "100%",
+            width: "100%",
+            height: "auto",
             borderRadius: "20px",
-            position: 'relative',
             color: "#f5f5f5",
             overflow: 'hidden',
-            // alignContent: 'center',
+            padding: "20px",
+            background: "rgba(255, 255, 255, 0.2)",
+            boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
+            backdropFilter: "blur(5px)",
+            border: "1px solid rgba(74, 42, 24, 0.484)",
+            textAlign: "center", // Center the text inside the card
+            animation: direction === "right"
+                        ? "slideInFromRight 0.5s ease-in-out"
+                        : direction === "left"
+                        ? "slideInFromLeft 0.5s ease-in-out"
+                        : "none", //apply animation based on direction
+            animationRepeat: "infinity",
         }
 
         const nextButton = {
-            fontSize: "45px",
+            fontSize: "30px",
             position: "absolute",
-            right: "400px",
+            right: "10px",
+            top: "50%",
             color: "f5f5f5",
             zIndex: 1,
-            cursor: "pointer"
+            cursor: "pointer",
+            transform: "translateY(-50%)", //adjust the arrow for perfect center
+            transition: "0.3 ease-in-out",
         }
 
         const prevButton ={
             fontSize: "45px",
             position: "absolute",
-            // left: "1200px",
+            left: "10px",
+            top: "50%",
             color: "#f5f5f5",
             zIndex: 1,
-            cursor: "pointer"
+            cursor: "pointer",
+            transform: "translateY(-50%)",
+            transition: "0.3 ease-in-out",
         }
+
+        //style for the entire slider container (right side)
+        const sliderContainer = {
+            width: "45%",
+            position: "relative",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center",
+        }
+
+      
 
     return (
 
-        <div>
+        <div style= {sliderContainer}>
             <div style={prevButton} onClick={prevBtn}>
                 <MdOutlineArrowBackIosNew />
             </div>

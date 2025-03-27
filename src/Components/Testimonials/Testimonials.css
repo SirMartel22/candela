@@ -1,5 +1,5 @@
 .testimonials-section{
-    /* padding: 5% 10%; */
+    padding: 5% 10%;
     background: rgb(44,26,15);
     background: radial-gradient(circle, rgba(44,26,15,1) 0%, rgba(5,3,3,1) 100%);
     background-size: cover;
@@ -57,6 +57,16 @@
     border: 1px solid rgba(74, 42, 24, 0.484);
     margin: 10px 0;
     /* width: 30px; */
+    transition: transform 0.5s ease-in-out;
+    opacity: 0.5s ease-in-out;
+}
+
+.right{
+    animation: slideFromRight 0.5s ease-in-out;
+}
+
+.left{
+    animation: slideFromLeft 0.5s ease-in-out;
 }
 
 .testimony-card h4{
@@ -67,4 +77,28 @@
     margin-left: -20px;
     z-index: 0;
     transform: scale(1.05);
+}
+
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(10%); /* slide in from right*/
+        opacity: 0; 
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft{
+    0% {
+        transform: translateX(-10%); /* slide in from left*/
+        opacity: 0;
+    }
+    100%{
+        transform:translateX(0); /* slide in to the center*/
+        opacity: 1;
+    }
 }
