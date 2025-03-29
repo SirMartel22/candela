@@ -130,5 +130,18 @@
         background: none;
     }
 
+}
 
+@media(max-width: 480px){
+    .video-container{
+        padding: 2% 5%;
+    }
+
+    .video-header h1, .video-header p{
+        width: 100%;
+    }
+
+    .video-grid-btn-text p{
+        width: 100%;
+    }
 }

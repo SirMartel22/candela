@@ -75,7 +75,7 @@ const video = [
                         </button>
 
                         <p className="video-grid-text">
-                        Step into the light and discover brilliance beyond limits.
+                            Step into the light and discover brilliance beyond limits.
                         </p>
                     </div>
 

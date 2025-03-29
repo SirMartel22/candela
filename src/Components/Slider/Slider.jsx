@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Slider.css'
 
 import imgLandscape1 from '../../assets/l1.jpg';
@@ -12,8 +12,12 @@ import p2 from '../../assets/installation 2.jpg';
 import lighting from '../../assets/lighting.jpg'
 import lighting2 from '../../assets/lighting2.jpg'
 
+import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
+
 
 export const Slider = () => {
+
+    const [image, setImage] = useState(0)
 
     const imgArr = [
            imgLandscape1, 
@@ -28,15 +32,43 @@ export const Slider = () => {
            lighting2        
        ]
 
+        const forwardBtn = () =>{
+            setImage(image === imgArr.length - 1  ? 0 : image + 1 )
+        }
+
+        const backwardBtn = () => {
+            setImage(image === 0 ? imgArr.length - 1 : image - 1 )
+        }
     //    console.log({imgArr});
     return (
 
-        <div>
-            <h1>Gallery</h1>
-            {imgArr.map((item, id)=>{
-                console.log(id)
-                return <img src={item} alt={`image ${id}`} key={id} />
-            })}
+        <div className="slider-container">
+            <h1>Gallery for your perusal</h1>
+            <div className = "carousel">
+                <IoIosArrowBack className="arrow backward-btn" onClick={backwardBtn} />
+                {imgArr.map((item, id)=>{
+                    return (
+                        <img 
+                            src={item} 
+                            alt={`image ${id}`} 
+                            key={id} 
+                            className={image === id ? "image": "image image-hidden"}/>)
+                })}
+                <IoIosArrowForward  className="arrow forward-btn"  onClick={forwardBtn} />
+
+                <span className="indicators">
+                    {imgArr.map((_, id)=>{
+                        return (
+                            <button 
+                                onClick={null} 
+                                className={image===id? "indicator": "indicator indicator-highlight"}>
+
+                            </button>
+                        )
+                    })}
+                </span>
+            </div>
+                
         </div>
     )
 }

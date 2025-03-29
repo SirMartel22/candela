@@ -110,7 +110,7 @@ const TestimonySlider = ({testimonials}) => {
 
         //style for the entire slider container (right side)
         const sliderContainer = {
-            width: "45%",
+            width: "100%",
             position: "relative",
             display: "flex",
             flexDirection: "column",
@@ -128,7 +128,7 @@ const TestimonySlider = ({testimonials}) => {
                 <MdOutlineArrowForwardIos />
             </div>
 
-            <div style={testimonyStyles}>
+            <div style={testimonyStyles} className="testimony-slider">
                 <p>{testimonials[currentTestimony].testimony}</p>
                 <p>{testimonials[currentTestimony].post}</p>
                 <h1>{testimonials[currentTestimony].name}</h1>
@@ -185,7 +185,7 @@ const NewTestimony = () => {
                 </button>
             </div>
 
-            <TestimonySlider testimonials={testimonials} />
+            <TestimonySlider testimonials={testimonials}  />
         </div>
     )
 }

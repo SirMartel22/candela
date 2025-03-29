@@ -101,6 +101,7 @@
 @media(max-width: 768px){
     .organization-head h1{
         font-size: 200%;
+        width: 100%;
     }
 
     .image{
