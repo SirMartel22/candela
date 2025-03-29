@@ -62,8 +62,6 @@ const TestimonySlider = ({testimonials}) => {
         }, 7000)
         return () => clearInterval(interval);
       }, []);
-
-      
   
 
         const testimonyStyles = {
@@ -119,8 +117,6 @@ const TestimonySlider = ({testimonials}) => {
             alignItems: "center",
             justifyContent: "center",
         }
-
-      
 
     return (
 

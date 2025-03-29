@@ -1,0 +1,55 @@
+{
+    "images":[
+        {
+            "src": "../../assets/l1.jpg",
+            "alt": "image 1"
+        },
+
+        {
+            "src": "../../assets/l2.jpg",
+            "alt": "image 2"
+        },
+
+        {
+            "src": "../../assets/landscape.jpg",
+            "alt": "image 3"
+        },
+
+        {
+            "src": "../../assets/landscape1.jpg",
+            "alt": "image 4"
+        },
+
+        {
+            "src": "../../assets/landscape1.jpg",
+            "alt": "image 5"
+        },
+
+        {
+            "src": "../../assets/mixer.jpg",
+            "alt": "image 6"
+        },
+
+        {
+            "src": "../../assets/mixer2.jpg",
+            "alt": "image 7"
+        },
+
+        {
+            "src": "../../assets/p1.jpg",
+            "alt": "image 8"
+        },
+        {
+            "src": "../../assets/installation 2.jpg",
+            "alt": "image 9"
+        },
+        {
+            "src": "../../assets/lighting.jpg",
+            "alt": "image 10"
+        },
+        {
+            "src": "../../assets/lighting2.jpg",
+            "alt": "image 11"
+        }
+    ]
+}

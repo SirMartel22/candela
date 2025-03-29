@@ -14,6 +14,9 @@ import NewSlider from './Components/NewSlider/NewSlider'
 // import NewTestimony from './Components/NewTestimony/NewTestimony'
 import NewTestimony from './Components/Testimonials/NewTestimony';
 
+// import { images } from './Components/Slider/Slider.json'
+
+import { Slider } from './Components/Slider/Slider'
 
 
 const App = () =>{
@@ -24,8 +27,12 @@ const App = () =>{
       <Navbar />
       <Hero />
       <About />
-      <Gallery />
-      <NewSlider />
+
+      {/* <Slider imageSlider= { images } /> */}
+      <Slider  />
+
+      {/* <Gallery /> */}
+      {/* <NewSlider /> */}
       <Video />
       {/* <Organization /> */}
       <Testing />

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import './Gallery.css'
 
 //importing the necessary images
@@ -15,31 +15,60 @@ import lighting2 from '../../assets/lighting2.jpg'
 
 
 
-const Gallery = () =>{
+const Gallery = () => {
 
+    const imgArr = [
+        imgLandscape1, 
+        imgLandscape2, 
+        Landscape1, 
+        Landscape2,
+        mixer1,
+        mixer2,
+        p1,
+        p2,
+        lighting,
+        lighting2        
+    ]
+
+    const showArr = imgArr.map((eachImg)=>{
+        // console.log(eachImg)
+        
+    })
 
     return (
-
-        <div className="gallery-container" id='gallery'>
-            <h1>For your Perusal</h1>
-
-            <div className= 'grid-container'>
-            
-                <img src={imgLandscape1} className="first-img"/>
-                <img src={p1} className="second-img"/>
-                <img src={imgLandscape2} className="third-img"/>
-            
-                <img src={Landscape1} className="fourth-img"/>
-                <img src={mixer1} className="fifth-img"/>
-                <img src={lighting} className="sixth-img"/>
-           
-                <img src={lighting2} className="seventh-img"/>
-                <img src={mixer2} className="eighth-img"/>
-                <img src={Landscape2} className="nineth-img"/>
-            </div>
+        <div>
 
         </div>
     )
 }
 
 export default Gallery;
+
+// const Gallery = () =>{
+
+
+//     return (
+
+//         <div className="gallery-container" id='gallery'>
+//             <h1>For your Perusal</h1>
+
+//             <div className= 'grid-container'>
+            
+//                 <img src={imgLandscape1} className="first-img"/>
+//                 <img src={p1} className="second-img"/>
+//                 <img src={imgLandscape2} className="third-img"/>
+            
+//                 <img src={Landscape1} className="fourth-img"/>
+//                 <img src={mixer1} className="fifth-img"/>
+//                 <img src={lighting} className="sixth-img"/>
+           
+//                 <img src={lighting2} className="seventh-img"/>
+//                 <img src={mixer2} className="eighth-img"/>
+//                 <img src={Landscape2} className="nineth-img"/>
+//             </div>
+
+//         </div>
+//     )
+// }
+
+// export default Gallery;
