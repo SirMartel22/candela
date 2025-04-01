@@ -1,0 +1,31 @@
+{
+    "Testifiers": [
+        {
+            "description": "Candela's lighting solutions transformed our theater production. The audience was completely immersed in every scene",
+            "name": "Maria Gonzalez",
+            "position": "Theater Director",
+            "src": ""
+        },
+
+        {
+            "description": "Candela's DMX systems are incredibly intuitive and have revolutionized our light show. Setup time is cut in half, and the impact is twice as powerful.",
+            "name": "Jake Wilson",
+            "position": "Production Designer",
+            "src": ""
+        },
+
+        {
+            "description": "The moment we switched to Candela for our dance studio, both instructors and students noticed the difference.",
+            "name": "Robert James",
+            "position": "Theater Director",
+            "src": ""
+        },
+
+        {
+            "description": "When our community theater upgraded to Candela, we weren't just getting better lights—we were getting a partner.",
+            "name": "Amelie Tailor ",
+            "position": "Community Arts Director",
+            "src": ""
+        }
+    ]
+}
