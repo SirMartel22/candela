@@ -42,12 +42,10 @@
     color: #ee4e00;
     background: #fff;
     border-radius: 50%;
+    cursor: pointer;
     /* padding: 20px */
 }
 
-.arrow:hover{
-    cursor:pointer;
-}
 
 .backward-btn{
     left: 6rem;

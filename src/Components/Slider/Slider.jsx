@@ -31,15 +31,17 @@ export const Slider = () => {
            lighting,
            lighting2        
        ]
+       
+       //setting the previous view button
+       const backwardBtn = () => {
+           setImage(image === 0 ? imgArr.length - 1 : image - 1 )
+       }
 
+       //setting the next button
         const forwardBtn = () =>{
             setImage(image === imgArr.length - 1  ? 0 : image + 1 )
         }
 
-        const backwardBtn = () => {
-            setImage(image === 0 ? imgArr.length - 1 : image - 1 )
-        }
-    //    console.log({imgArr});
     return (
 
         <div className="slider-container">
