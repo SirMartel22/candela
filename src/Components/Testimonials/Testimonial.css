@@ -13,6 +13,15 @@
     width: 45%;
 }
 
+.TestimonialDescription h1{
+    font-size: 45px;
+    color: #eddbdb;  
+    border-left: 4px solid  rgb(191, 78, 8);
+    padding-left: 10px;
+    width: 400px;
+}
+
+
 .TestimonialDescription p{
     margin: 25px 0;
 }
@@ -33,13 +42,13 @@
     height: 100%;
     border-radius: 10px;
     /* From https://css.glass */
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(140, 139, 139, 0.2);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: none;
-    padding: 50px;
+    padding: 70px;
 }
 
 .TestimonialCard h4{
@@ -95,6 +104,7 @@
 @media(max-width: 768px){
     .TestimonialContainer{
         flex-direction: column;
+        padding: 2% 4%;
     }
 
     .TestimonialDescription {
@@ -105,4 +115,14 @@
     .TestimonialSection{
         width: 90%;
     }
+
+    .TestimonialCard{
+       padding: 30px;
+       width: 480px;
+    }
+
+    .slideBtn{
+        background: none;
+    }
+       
 }

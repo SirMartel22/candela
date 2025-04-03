@@ -15,8 +15,9 @@ const Join = () => {
 
             <div className="join-text">
                 <h4>Join 200+ people who already trust us with their event</h4>
-                <p>Adjust the responsiveness of all the section, 
-                    link all the buttons, countdown to next event, do animation</p>
+                <p>Experience seamless stage lighting solutions trusted by over 200 clients. 
+                    From concerts to weddings, we bring your events to life with brilliance and precision
+                </p>
             </div>
 
         </div>

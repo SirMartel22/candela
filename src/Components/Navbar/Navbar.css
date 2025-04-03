@@ -6,8 +6,9 @@
     display: flex;
     list-style-type: none;
     align-items: center;
-    justify-content: space-around;
-    gap: 170px;
+    justify-content: center;
+   
+    gap: 200px;
 }
 
 /* Navigation links to other page */

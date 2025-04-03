@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
-import './Slider.css'
-
+import './Slider.css'               
 import imgLandscape1 from '../../assets/l1.jpg';
 import imgLandscape2 from '../../assets/l2.jpg';
 import Landscape1 from '../../assets/landscape.jpg';
