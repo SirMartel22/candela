@@ -1,6 +1,4 @@
-import React from 'react';
-import {useState, useEffect} from 'react';
-// import classes from './Navbar.module.css'
+import React, { useState, useEffect, useRef } from 'react';
 import './Navbar.css'
 import logo from '../../assets/candela-logo.png'
 import { CiFacebook } from "react-icons/ci";
@@ -9,6 +7,7 @@ import { FaInstagram } from "react-icons/fa6";
 import { PiTiktokLogoLight } from "react-icons/pi";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { Link as ScrollLink } from 'react-scroll'
+import gsap from 'gsap'
 
 
 
@@ -18,10 +17,54 @@ const Navbar = () => {
 
     const [sticky, setSticky] = useState(false);
 
+    //GSAP animation ref
+    // const navRef = useRef(null);
+    // const logoRef = useRef(null);
+    // const linksRef = useRef(null);
+    // const socialRef = useRef(null)
+
     useEffect(() => {
         window.addEventListener('scroll', () => {
             window.scrollY > 500 ? setSticky(true) : setSticky(false);
-        })
+        });
+
+        // const tl = gsap.timeline({
+        //     defaults:{
+        //         ease: "power3.out"
+        //     }
+        // })
+
+        // //Navbar entrance
+        // tl.from(navRef.current, {
+        //     y: -100,
+        //     opacity: 0,
+        //     duration: 0.1
+        // })
+
+        // //logo animation
+        // .from(logoRef.current, {
+        //     y: -50,
+        //     opacity: 0,
+        //     duration: 0.8,
+        //     ease: "back.out(1.7)"
+        // }, "-=0.5") //overlap with previous animation
+
+        // //navigation links animation
+        // .from(linksRef.current.children, {
+        //     y: 20,
+        //     opacity: 0,
+        //     duration: 0.6,
+        //     stagger: 0.2,
+        // }, "-=0.5");
+
+
+        // //CleanUp
+        // return() => {
+        //     tl.kill();
+        // }
+
+
+      
     }, [])
 
     //toggle navbar responsiveness
@@ -34,7 +77,7 @@ const Navbar = () => {
 
     return (
 
-        <nav className={`nav-bar ${sticky ? 'sticky-background' : ''}`} >
+        <nav  className={`nav-bar ${sticky ? 'sticky-background' : ''}`} >
            
 
             <div className='logo'>
