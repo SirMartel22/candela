@@ -11,6 +11,8 @@
     border-left: 4px solid  rgb(191, 78, 8);
     padding-left: 10px;
     width: 500px;
+    margin-bottom: 40px;
+    
 }
 
 .carousel{
@@ -26,6 +28,7 @@
     width: 80%;
     height: 500px;
     border-radius: 10px;
+    box-shadow: 0 4px 15px #5c473de1;
 }
 
 .arrow{
@@ -92,8 +95,10 @@
     .slider-container{
       align-items: center;
       justify-content: center;
-      
+      padding: 2% 5%;
     }
+
+
 
     .slider-container h1{
         font-size: 35px;
@@ -108,7 +113,7 @@
         justify-content: center;
     }
     .image{
-        width: 380px;
+        width: 90%;
         height: 30%;
     }
 
