@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import './Slider.css'               
 import imgLandscape1 from '../../assets/l1.jpg';
 import imgLandscape2 from '../../assets/l2.jpg';
@@ -12,9 +12,16 @@ import lighting from '../../assets/lighting.jpg'
 import lighting2 from '../../assets/lighting2.jpg'
 
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+gsap.registerPlugin(ScrollTrigger)
+
 
 
 export const Slider = () => {
+
+    const galleryRef = useRef(null)
+    const carouselRef = useRef(null)
 
     const [image, setImage] = useState(0)
 
@@ -41,11 +48,49 @@ export const Slider = () => {
             setImage(image === imgArr.length - 1  ? 0 : image + 1 )
         }
 
+        useEffect(() => {
+
+            const galleryEl = galleryRef.current;
+            const carouselEl = carouselRef.current
+
+            gsap.fromTo(galleryEl, {
+                y: 50,
+                opacity: 0.3,
+            },
+            {
+                y: 0,
+                opacity: 1,
+                duration: 1.2,
+                ease: 'power2.inOut',
+                scrollTrigger: {
+                    trigger: galleryEl,
+                    start: 'top 80%',
+                    toggleAction: 'play none none none'
+                }
+            });
+
+            gsap.fromTo(carouselEl, {
+                y: 0,
+                opacity: 0.4,
+            },
+            {
+                y: 0,
+                opacity: 1,
+                duration: 1,
+                delay:1,
+                ease: 'power2.inOut',
+                scrollTrigger: {
+                    trigger: carouselEl,
+                    start: 'top 90%',
+                    toggleAction: 'play none none none'
+                }
+            });
+        })
     return (
 
         <div className="slider-container">
-            <h1>Gallery for your perusal</h1>
-            <div className = "carousel">
+            <h1 ref={ galleryRef }> Gallery for your perusal</h1>
+            <div ref={ carouselRef } className = "carousel">
                 <IoIosArrowBack className="arrow backward-btn" onClick={backwardBtn} />
                 {imgArr.map((item, id)=>{
                     return (

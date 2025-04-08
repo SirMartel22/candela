@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef } from 'react'
 import './About.css'
 import { PiChurchThin } from "react-icons/pi";
 import { GiCrystalShine } from "react-icons/gi";
@@ -10,31 +10,53 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger);
 
 
+
 const About = () => {
-   useEffect(()=> {
-   
-       gsap.fromTo('.about', {
-         y: 50,
-         opacity: 0.6,
-       },
-       {
-         y: 0,
-         opacity: 1,
-         duration: 3,
-         ease:'power2.in',
-         ScrollTrigger: {
-           trigger: '.about',
-           start: 'top 80%',
-           toggleAction: " play none none none",
-         },
-       }
-     )
-   }, [])
+    const aboutRef = useRef(null)
+    const serviceRef = useRef(null)
+
+    useEffect(()=> {
+    
+        const aboutEl = aboutRef.current
+        const serviceEl = serviceRef.current
+            gsap.fromTo(aboutEl, {
+                y: 50,
+                opacity: 0.2,
+            },
+            {
+                y: 0,
+                opacity: 1,
+                duration: 1,
+                ease:'power2.inOut',
+                scrollTrigger: {
+                    trigger: aboutEl,
+                    start: 'top 80%',
+                    toggleAction: " play none none none",
+                },
+            });
+
+            gsap.fromTo(serviceEl, {
+                y: 50,
+                opacity: 0.2,
+            },
+            {
+                y: 0,
+                opacity: 1,
+                duration: 1,
+                delay: 1,
+                ease: 'power2.inOut',
+                scrollTrigger:{
+                    trigger: serviceEl,
+                    start: 'top 80%',
+                    toggleAction: 'play none none none'
+                },
+            })
+        }, [])
 
   return (
     <div className='about-container' id='about'>
 
-     <div className='about'>
+     <div ref={aboutRef} className='about'>
         <h1>Company Profile</h1>
         <p>At Candela, we bring events to life with cutting-edge stage lighting solutions that create unforgettable atmospheres. Whether it’s a 
              <span> church concert, wedding, corporate event, or naming ceremony,</span> our expert lighting designs set the perfect mood, 
@@ -49,7 +71,7 @@ const About = () => {
         
       </div> 
 
-      <div className='services'>
+      <div  ref={serviceRef} className='services'>
         <h2>What We Do</h2>
 
             <div className="concert container">

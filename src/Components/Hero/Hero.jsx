@@ -13,13 +13,14 @@ const Hero = () => {
 
     gsap.fromTo('.hero-text', {
       y: 50,
-      opacity: 0.6,
+      opacity: 0.2,
     },
     {
       y: 0,
       opacity: 1,
-      duration: 3,
-      ease:'power2.in',
+      duration: 1.2,
+      delay: 1,
+      ease:'power2.out',
       ScrollTrigger: {
         trigger: '.hero-text',
         // start: 'top 80%',
