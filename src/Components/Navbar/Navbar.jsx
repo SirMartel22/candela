@@ -22,9 +22,15 @@ const Navbar = () => {
         window.addEventListener('scroll', () => {
             window.scrollY > 500 ? setSticky(true) : setSticky(false);
         });
-        gsap.to('.nav-bar', {
-            y: 20,
-            duration: 5,
+        gsap.fromTo('.nav-bar', {
+            y: 50,
+            opacity: 0,
+        },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 2,
+          ease: 'power2.out' 
         })
 
       

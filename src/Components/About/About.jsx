@@ -1,13 +1,36 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './About.css'
 import { PiChurchThin } from "react-icons/pi";
 import { GiCrystalShine } from "react-icons/gi";
 import { IoFlameOutline } from "react-icons/io5";
 import { GiMightySpanner } from "react-icons/gi";
-import {Link as ScrollLink} from 'react-scroll'
+import {Link as ScrollLink} from 'react-scroll';
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+gsap.registerPlugin(ScrollTrigger);
+
 
 const About = () => {
+   useEffect(()=> {
    
+       gsap.fromTo('.about', {
+         y: 50,
+         opacity: 0.6,
+       },
+       {
+         y: 0,
+         opacity: 1,
+         duration: 3,
+         ease:'power2.in',
+         ScrollTrigger: {
+           trigger: '.about',
+           start: 'top 80%',
+           toggleAction: " play none none none",
+         },
+       }
+     )
+   }, [])
+
   return (
     <div className='about-container' id='about'>
 
