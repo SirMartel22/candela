@@ -44,42 +44,30 @@ const video = [
 
         useEffect(() => {
 
-            const videoHeaderEl = videoHeaderRef.current;
-            const videoGridEl = videoGridRef.current;
+            const elements = [videoHeaderRef.current, videoGridRef.current]
 
-            gsap.fromTo(videoHeaderEl, {
-                y: 50,
-                opacity: 0.5,
-            },{
-                y: 0,
-                opacity: 1,
-                delay: 1,
-                duration: 1,
-                ease: 'power2.inOut',
-                scrollTrigger: {
-                    trigger: videoHeaderEl,
-                    start: 'top 80%',
-                    toggleAction: 'play none none none'
-                }
+            elements.forEach((el) => {
+
+                gsap.fromTo(el,
+                    {
+                        y: 50,
+                        opacity: 0.5,
+                    },{
+                        y: 0,
+                        opacity: 1,
+                        delay: 1,
+                        duration: 1,
+                        ease: 'power2.inOut',
+                        scrollTrigger: {
+                            trigger: el,
+                            start: 'top 80%',
+                            toggleAction: 'play none none none'
+                        },
+                    }
+                );  
             })
-
-            gsap.fromTo(videoGridEl, {
-                y: 50,
-                opacity: 0.5,
-            },{
-                y: 0,
-                opacity: 1,
-                delay: 1,
-                duration: 1,
-                ease: 'power2.inOut',
-                scrollTrigger: {
-                    trigger: videoGridEl,
-                    start: 'top 80%',
-                    toggleAction: 'play none none none'
-                }
-            })
-
-        })
+            
+        }, []);
         
         const [selectedVideo, setSelectedVideo] = useState(null);
 

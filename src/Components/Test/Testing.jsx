@@ -1,5 +1,4 @@
-import React from 'react';
-import {useState, useEffect} from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './Test.css'
 import bowenLogo from '../../assets/bowen.png'
 import KwaraTvLogo from '../../assets/kwaraTv.jpg'
@@ -9,6 +8,10 @@ import redeemersLogo from '../../assets/redeemers.png'
 import landmarkLogo from '../../assets/landmark.jpg'
 import KTvLogo from '../../assets/adidas.png'
 import skAward from '../../assets/skilled-award.jpg'
+
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+gsap.registerPlugin(ScrollTrigger)
 
 
 const Testing = () => {
