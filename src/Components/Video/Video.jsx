@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './Video.css'
-
-import {useState, useEffect} from 'react';
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+gsap.registerPlugin(ScrollTrigger)
 
 
 const video = [
@@ -38,6 +39,47 @@ const video = [
 ];
 
     const Video = () => { 
+        const videoHeaderRef = useRef(null);
+        const videoGridRef = useRef(null)
+
+        useEffect(() => {
+
+            const videoHeaderEl = videoHeaderRef.current;
+            const videoGridEl = videoGridRef.current;
+
+            gsap.fromTo(videoHeaderEl, {
+                y: 50,
+                opacity: 0.5,
+            },{
+                y: 0,
+                opacity: 1,
+                delay: 1,
+                duration: 1,
+                ease: 'power2.inOut',
+                scrollTrigger: {
+                    trigger: videoHeaderEl,
+                    start: 'top 80%',
+                    toggleAction: 'play none none none'
+                }
+            })
+
+            gsap.fromTo(videoGridEl, {
+                y: 50,
+                opacity: 0.5,
+            },{
+                y: 0,
+                opacity: 1,
+                delay: 1,
+                duration: 1,
+                ease: 'power2.inOut',
+                scrollTrigger: {
+                    trigger: videoGridEl,
+                    start: 'top 80%',
+                    toggleAction: 'play none none none'
+                }
+            })
+
+        })
         
         const [selectedVideo, setSelectedVideo] = useState(null);
 
@@ -45,7 +87,7 @@ const video = [
 
                 <div className = "video-container" id='video'>
 
-                    <div className="video-header">
+                    <div ref = { videoHeaderRef } className="video-header">
                         <h1>Relive Video from Past Event By Candela</h1>
                         <p>Candela's technology lets you relive past events through immersive, high-quality video experiences.</p>
                     </div>
@@ -54,7 +96,7 @@ const video = [
 
                   <div className="video-grid-container">
                     
-                  <div className="video-grid">
+                  <div ref = { videoGridRef }  className="video-grid">
                         {video.map((video) => (
                             <div key={video.id} className="video-item" onClick={() => setSelectedVideo(video.url) }>
                                 <iframe
