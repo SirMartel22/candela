@@ -17,40 +17,28 @@ const About = () => {
 
     useEffect(()=> {
     
-        const aboutEl = aboutRef.current
-        const serviceEl = serviceRef.current
-            gsap.fromTo(aboutEl, {
-                y: 50,
+        
+        const elements = [ aboutRef.current, serviceRef.current ]
+            
+        elements.forEach((el)=> {
+            gsap.fromTo(el, {
+                y: 30,
                 opacity: 0.2,
             },
+    
             {
                 y: 0,
                 opacity: 1,
-                duration: 1,
-                ease:'power2.inOut',
-                scrollTrigger: {
-                    trigger: aboutEl,
-                    start: 'top 90%',
-                    toggleAction: " play none none none",
-                },
-            });
-
-            gsap.fromTo(serviceEl, {
-                y: 50,
-                opacity: 0.2,
-            },
-            {
-                y: 0,
-                opacity: 1,
-                duration: 1,
-                delay: 1,
+                duration: 1.5,
+                delay: 0.5,
                 ease: 'power2.inOut',
                 scrollTrigger:{
-                    trigger: serviceEl,
+                    trigger: el,
                     start: 'top 90%',
                     toggleAction: 'play none none none'
                 },
             })
+        })
         }, [])
 
   return (

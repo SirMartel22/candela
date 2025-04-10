@@ -1,13 +1,44 @@
-import React from 'react';
+import React, {useEffect, useRef} from 'react';
 import './Footer.css'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+gsap.registerPlugin(ScrollTrigger)
 
 const Footer = () => {
+    const footerRef = useRef(null)
+    const copyrightRef = useRef(null)
 
+    useEffect(()=> {
+
+        const elements = [footerRef.current, copyrightRef.current]
+
+        elements.forEach((el) => {
+           gsap.fromTo(el, {
+                y: 30,
+                opacity: 0.3
+            },
+            {
+                y: 0,
+                opacity: 1,
+                delay: 0.5,
+                duration: 1.5,
+                ease: 'power2.inOut',
+                scrollTrigger: {
+                    trigger: el,
+                    start: 'top 90%',
+                    toggleAction: 'play none none none'
+                }
+            }
+          )
+          
+        })
+
+    }, [])
     return (
 
         <div className="footer-container">
 
-        <div className='footer-wrapper'>
+        <div ref = { footerRef }className='footer-wrapper'>
 
             <div className="company-name">
                 <h1>Candela Lights and Brand</h1>
@@ -42,7 +73,7 @@ const Footer = () => {
 
             </div>
 
-        <div className="copy">
+        <div ref = { copyrightRef } className="copy">
             <p>&copy; Candela 2025</p>
         </div>
 

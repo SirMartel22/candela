@@ -54,30 +54,27 @@ export const Slider = () => {
             const carouselEl = carouselRef.current
 
             gsap.fromTo(galleryEl, {
-                y: 50,
+                // y: 50,
                 opacity: 0.3,
             },
             {
-                y: 0,
+                // y: 0,
                 opacity: 1,
                 duration: 1.2,
                 ease: 'power2.inOut',
                 scrollTrigger: {
                     trigger: galleryEl,
-                    start: 'top 80%',
+                    start: 'top 90%',
                     toggleAction: 'play none none none'
                 }
             });
 
             gsap.fromTo(carouselEl, {
-                y: 0,
-                opacity: 0.4,
+                opacity: 0.2,
             },
             {
-                y: 0,
                 opacity: 1,
-                duration: 1,
-                delay:1,
+                duration: 0.2,
                 ease: 'power2.inOut',
                 scrollTrigger: {
                     trigger: carouselEl,
