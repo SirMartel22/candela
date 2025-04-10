@@ -7,7 +7,6 @@
     list-style-type: none;
     align-items: center;
     justify-content: center;
-   
     gap: 200px;
 }
 
@@ -78,7 +77,6 @@
         background: rgb(0,0,0);
         background: linear-gradient(223deg, rgba(17, 16, 16, 0.998) 10%, rgba(18, 11, 6, 0.929) 76%);
         top: 0;
-        /* right: -100%; */
         right: -200px;
         bottom: 0;
         position: fixed;
@@ -90,7 +88,6 @@
         justify-content: left;
         height: 90vh;
         border-radius: 10px 0 10px 10px;
-        /* right: -200px; */
     }
 
 

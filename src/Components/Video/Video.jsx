@@ -60,7 +60,7 @@ const video = [
                         ease: 'power2.inOut',
                         scrollTrigger: {
                             trigger: el,
-                            start: 'top 80%',
+                            start: 'top 90%',
                             toggleAction: 'play none none none'
                         },
                     }

@@ -27,17 +27,45 @@ const Testing = () => {
             skAward
         ];
         console.log(brandArr);
+
+        const headRef = useRef(null)
+        const textRef = useRef(null)
+
+
+        useEffect(()=>{
+            const elements = [headRef.current, textRef.current]
+
+            elements.forEach((el) => {
+
+                gsap.fromTo(el, {
+                    y: 50,
+                    opacity: 0.5,
+                },{
+                    y: 0,
+                    opacity: 1,
+                    delay: 0.5,
+                    duration: 1,
+                    ease: 'power2.inOut',
+                    scrollTrigger:{
+                        trigger: el,
+                        start: 'top 90%',
+                        toggleAction: 'play none none none'
+                    }
+                })
+            })
+        })
+
         
     return (
 
         <div className='organization-container'>
 
-            <div className="organization-head">
-                <h1 className="head">
+            <div  className="organization-head">
+                <h1 ref= { headRef } className="head">
                     30+ Big Organization Makes 
                     Candela their Event Lighting Brand
                 </h1>
-                <p className="text">Many Organization have collaborated with 
+                <p ref= { textRef } className="text">Many Organization have collaborated with 
                     Candela and they trust us with their Event Lighting</p>
             </div>
 

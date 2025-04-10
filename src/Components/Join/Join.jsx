@@ -1,6 +1,7 @@
 import React from 'react';
 import './Join.css'
 import stageLight from '../../assets/stageLighting.jpg'
+import { Link as ScrollLink } from 'react-scroll'
 
 
 const Join = () => {
@@ -18,6 +19,12 @@ const Join = () => {
                 <p>Experience seamless stage lighting solutions trusted by over 200 clients. 
                     From concerts to weddings, we bring your events to life with brilliance and precision
                 </p>
+
+                 <button className="joinBtn">
+                            <ScrollLink to='contact' spy={true} smooth={true} duration={800}>
+                                Become part of the Family
+                            </ScrollLink>
+                </button>
             </div>
 
         </div>

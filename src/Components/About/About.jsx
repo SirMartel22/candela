@@ -30,7 +30,7 @@ const About = () => {
                 ease:'power2.inOut',
                 scrollTrigger: {
                     trigger: aboutEl,
-                    start: 'top 80%',
+                    start: 'top 90%',
                     toggleAction: " play none none none",
                 },
             });
@@ -47,7 +47,7 @@ const About = () => {
                 ease: 'power2.inOut',
                 scrollTrigger:{
                     trigger: serviceEl,
-                    start: 'top 80%',
+                    start: 'top 90%',
                     toggleAction: 'play none none none'
                 },
             })
