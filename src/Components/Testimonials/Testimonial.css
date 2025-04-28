@@ -105,15 +105,18 @@
     .TestimonialContainer{
         flex-direction: column;
         padding: 2% 4%;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 20px
     }
 
     .TestimonialDescription {
-        width: 90%;
         margin-bottom: 40px;
     }
     
-    .TestimonialSection{
-        width: 90%;
+    .TestimonialSection,  
+    .TestimonialDescription{
+        width: 100%;
     }
 
     .TestimonialCard{
@@ -124,5 +127,11 @@
     .slideBtn{
         background: none;
     }
-       
+}
+
+@media(max-width: 480px){
+    .TestimonialDescription h1{
+        font-size: 40px;
+        width: auto;
+    }
 }
