@@ -38,6 +38,24 @@ const Contact = () => {
                 });
             })
 
+            const handleSubmit = (e) => {
+                e.preventDefault();
+                const url = "https://script.google.com/macros/s/AKfycbxTkmY92IQ5m-I183hVvjkTFOq-ngmE4uSKbBHtYVgLTZTQqMrIgUY-ldbUaOPNrIO5/exec";
+                fetch(url, {
+                   method: "POST",
+                   headers: {"Content-Type": "application/x-www-form-urlencoded"},
+                   mode: "no-cors",
+                   body: (`Name=${e.target.name.value}
+                           Email=${e.target.email.value}
+                           Message=${e.target.message.value}`) 
+                }).then(res=>res.text()).then(data=>{
+                    alert(data);
+                    e.target.name.value = ""
+                    e.target.email.value = ""
+                    e.target.message.value = ""
+                }).catch(error=>console.log(error))
+            }
+
     return(
         <div className='contact-container' id='contact'>
             <div ref= { contactRef } className="contact-wrapper">
@@ -47,12 +65,14 @@ const Contact = () => {
                     <p>Feel free to Contact us anytime, 
                         we will get back to you as soon as possible
                         </p>
-
-                        <input placeholder={name} type='text'/>
-                        <input placeholder={email} type='email'/>
-                        <input placeholder={message} type='text'/>
+                    <form action='/submit' onSubmit={handleSubmit} method='POST'>
+                        <input placeholder={name} name="name" type='text'/>
+                        <input placeholder={email} name="email" type='email'/>
+                        <input placeholder={message} name="message" type='text'/>
 
                         <button className=' btn contact-btn'>{btn}</button>
+                    </form>
+                      
                   </div>
             
                     <div className="contact-info">
