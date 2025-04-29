@@ -57,7 +57,7 @@ const Contact = () => {
             
                     <div className="contact-info">
 
-                        <h1>Info</h1>
+                        <h1>Info</h1> 
 
                         <div className="mail info-div">
                             <MdOutlineEmail />

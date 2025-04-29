@@ -111,6 +111,15 @@
     color: black;
 }
 
+.explore a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.explore a:hover{
+    color: #ee4e00;
+}
+
 @media(max-width: 768px){
 
     .video-container{
