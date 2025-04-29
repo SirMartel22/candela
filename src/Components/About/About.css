@@ -99,4 +99,16 @@ span{
     }
 }
 
+@media(max-width: 480px){
+
+    .about-container{
+        padding: 10% 10%;
+        gap:50px;
+    
+    }
+    .about h1{
+        font-size: 32px;
+    }
+}
+
 

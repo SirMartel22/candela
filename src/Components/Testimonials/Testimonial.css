@@ -130,8 +130,12 @@
 }
 
 @media(max-width: 480px){
+    .TestimonialContainer{
+        padding: 5% 10%;
+    }
+
     .TestimonialDescription h1{
-        font-size: 40px;
+        font-size: 32px;
         width: auto;
     }
 }

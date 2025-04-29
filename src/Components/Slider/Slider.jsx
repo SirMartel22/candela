@@ -84,7 +84,7 @@ export const Slider = () => {
             });
         })
     return (
-
+ 
         <div className="slider-container">
             <h1 ref={ galleryRef }> Gallery for your perusal</h1>
             <div ref={ carouselRef } className = "carousel">

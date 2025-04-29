@@ -82,7 +82,20 @@ input::placeholder{
 }
 
 @media(max-width: 480px){
-    .contact-wrapper{
-        width: 90%;
+    .contact-container{
+        padding: 5% 10%;
     }
+
+    .contact-wrapper{
+        width: 100%;
+        padding: 5% 2%;
+        gap: 30px
+    }
+
+   .contact h1{
+    font-size: 30px;
+   }
+   .contact-info{
+    margin-left: 15px;
+   }
 }

@@ -95,13 +95,13 @@
     .slider-container{
       align-items: center;
       justify-content: center;
-      padding: 2% 5%;
+      padding: 10% 10%;
     }
 
 
 
     .slider-container h1{
-        font-size: 35px;
+        font-size: 32px;
         margin-bottom: 30px;
         width: 300px;
     }
