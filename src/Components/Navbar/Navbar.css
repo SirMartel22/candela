@@ -1,6 +1,10 @@
+
+
 .logo img{
     width: 100px;
 }
+
+
 
 .nav-link{
     display: flex;
@@ -26,7 +30,6 @@
     font-size: 13px;
     font-weight: bold;
 }
-
 
 
 /* Social links to social media pages */
@@ -68,6 +71,7 @@
 }
 
 @media(max-width: 768px){
+   
     .Hamburger{
         display: block;
     }
