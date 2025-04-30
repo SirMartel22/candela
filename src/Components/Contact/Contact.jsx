@@ -60,20 +60,23 @@ const Contact = () => {
         <div className='contact-container' id='contact'>
             <div ref= { contactRef } className="contact-wrapper">
 
+            <form action='/submit' onSubmit={handleSubmit} method='POST'>
+
                 <div className="contact">
                     <h1>Contact Section</h1>
                     <p>Feel free to Contact us anytime, 
                         we will get back to you as soon as possible
                         </p>
-                    <form action='/submit' onSubmit={handleSubmit} method='POST'>
                         <input placeholder={name} name="name" type='text'/>
                         <input placeholder={email} name="email" type='email'/>
                         <input placeholder={message} name="message" type='text'/>
 
                         <button className=' btn contact-btn'>{btn}</button>
-                    </form>
                       
                   </div>
+
+                  </form>
+
             
                     <div className="contact-info">
 

@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './Test.css'
 import bowenLogo from '../../assets/bowen.png'
-import KwaraTvLogo from '../../assets/kwaraTv.jpg'
+import KwaraTvLogo from '../../assets/kwaratv.jpg'
 import skilledAward from '../../assets/skilled-award.jpg'
 import pAssemblyLogo from '../../assets/p-assembly.png'
 import redeemersLogo from '../../assets/redeemers.png'
