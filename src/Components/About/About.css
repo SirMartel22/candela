@@ -89,6 +89,9 @@ span{
 }
 
 @media(max-width: 768px){
+    .about-container{
+        padding: 10% 5%;
+    }
     
     .about p{
         line-height: 1.7em;
@@ -102,7 +105,7 @@ span{
 @media(max-width: 480px){
 
     .about-container{
-        padding: 10% 10%;
+        padding: 10% 5%;
         gap:50px;
     
     }

@@ -20,6 +20,7 @@
     font-size: 250%;
     text-align: center;
     width: 80%;
+    margin-bottom: 30px;
 }
 
 .organization-head p{
@@ -28,6 +29,7 @@
     font-size: 16px;
     margin: 20px 0;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .organization-png{

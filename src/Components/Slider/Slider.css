@@ -79,6 +79,9 @@
 }
 
 @media(max-width: 768px){
+    .slider-container{
+        padding: 10% 5%;
+    }
 
     .image{
         width: 50%;
@@ -95,10 +98,8 @@
     .slider-container{
       align-items: center;
       justify-content: center;
-      padding: 10% 10%;
+      padding: 10% 5%;
     }
-
-
 
     .slider-container h1{
         font-size: 32px;

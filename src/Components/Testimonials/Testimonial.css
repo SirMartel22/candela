@@ -104,7 +104,7 @@
 @media(max-width: 768px){
     .TestimonialContainer{
         flex-direction: column;
-        padding: 2% 4%;
+        padding: 10% 5%;
         align-items: flex-start;
         justify-content: flex-start;
         gap: 20px
@@ -131,7 +131,7 @@
 
 @media(max-width: 480px){
     .TestimonialContainer{
-        padding: 5% 10%;
+        padding: 10% 5%;
     }
 
     .TestimonialDescription h1{

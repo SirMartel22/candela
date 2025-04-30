@@ -44,9 +44,9 @@ const Join = () => {
     return (
 
         <div className= "join-container">
-            <div className="join-img">
+            {/* <div className="join-img"> */}
                 {/* <img src={stageLight}/> */}
-            </div>
+            {/* </div> */}
 
             <div className="join-text">
                 <h4 ref = { joinHeadRef }> Join 200+ people who already trust us with their event</h4>
