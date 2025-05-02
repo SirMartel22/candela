@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useRef } from 'react'
+import {useState, useEffect, useRef } from 'react'
 import './Testimonial.css'
 
 import { Link as ScrollLink } from 'react-scroll'
@@ -41,7 +41,6 @@ const Testimonials = ( {Testifiers} ) => {
                 },{
                     y: 0,
                     opacity: 1,
-                    delay: 0.3,
                     duration: 0.5,
                     ease: 'power2.inOut',
                     scrollTrigger: {
