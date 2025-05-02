@@ -27,7 +27,6 @@ const Join = () => {
                 },{
                     y: 0,
                     opacity: 1,
-                    delay: 0.5,
                     duration: 1,
                     ease: 'power2.inOut',
                     scrollTrigger: {

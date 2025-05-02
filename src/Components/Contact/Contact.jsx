@@ -28,7 +28,6 @@ const Contact = () => {
                 {
                     opacity: 1,
                     duration: 2,
-                    delay:1,
                     ease: 'power2.inOut',
                     scrollTrigger: {
                         trigger: contactEl,

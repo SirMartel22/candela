@@ -30,7 +30,6 @@ const About = () => {
                 y: 0,
                 opacity: 1,
                 duration: 1.5,
-                delay: 0.5,
                 ease: 'power2.inOut',
                 scrollTrigger:{
                     trigger: el,

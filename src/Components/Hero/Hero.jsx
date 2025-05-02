@@ -18,12 +18,10 @@ const Hero = () => {
       y: 0,
       opacity: 1,
       duration: 1.2,
-      delay: 1,
       ease:'power2.out',
       ScrollTrigger: {
         trigger: '.hero-text',
-        // start: 'top 80%',
-        // toggleAction: " play none none none",
+ 
       },
     }
   )

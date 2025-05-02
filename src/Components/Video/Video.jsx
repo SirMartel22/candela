@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import './Video.css'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
@@ -55,7 +55,6 @@ const video = [
                     },{
                         y: 0,
                         opacity: 1,
-                        delay: 0.3,
                         duration: 1.5,
                         ease: 'power2.inOut',
                         scrollTrigger: {
@@ -77,7 +76,7 @@ const video = [
 
                     <div ref = { videoHeaderRef } className="video-header">
                         <h1>Relive Video from Past Event By Candela</h1>
-                        <p>Candela's technology lets you relive past events through immersive, high-quality video experiences.</p>
+                        <p>Candelas technology lets you relive past events through immersive, high-quality video experiences.</p>
                     </div>
                     
                    

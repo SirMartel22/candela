@@ -20,7 +20,6 @@ const Footer = () => {
             {
                 y: 0,
                 opacity: 1,
-                delay: 0.5,
                 duration: 1.5,
                 ease: 'power2.inOut',
                 scrollTrigger: {
